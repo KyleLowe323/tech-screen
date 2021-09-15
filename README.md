@@ -1,7 +1,5 @@
 ## Installation/Setup
 
----
-
 1. If the user does not have node installed locally I would advise installing [node](https://nodejs.org/en/).
 1. Once node is installed, there are two options for opening the project.
 
@@ -16,19 +14,13 @@
 
 ## Node API Server
 
----
-
-\* The need for a node server was necessary due to the potential for a CORS error to exist when returning data from the github API when running the application locally.
+The need for a node server was necessary due to the potential for a CORS error to exist when returning data from the github API when running the application locally.
 
 ## Client Web
-
----
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This approach was chosen as it's one of the quickest ways to get started building a web application. In these situations it may be helpful to have a foundational project template that includes all necessary frameworks and technologies as well as some boilerplate examples that can assist with adding features as the project kicks progresses through development sprints.
 
 ## Goals
-
----
 
 - General Tasks
 
@@ -52,8 +44,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Proper tooltips in lieu of `title` attribute for areas where data is too large to fit into predefined cells
 
 ## Testing Instructions
-
----
 
 1. When the page displays, the default dataset being displayed is fromt the Netflix organization. The data being displayed is returned from the API using the max number of records _(`per_page` query param = 100)_. The data is sorted by `watchers_count`, but there is the potential for this to be really any field displayed.
 
