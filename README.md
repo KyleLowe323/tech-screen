@@ -1,8 +1,9 @@
 ## Installation/Setup
 
 1. If the user does not have node installed locally I would advise installing [node](https://nodejs.org/en/).
-1. Once node is installed, there are two options for opening the project.
+1. Once node is installed, there are multiple options for opening the project.
 
+   1. Clone the repo down locally via the [tech-screen](https://github.com/KyleLowe323/tech-screen) repo link.
    1. Through your IDE of choice _(preferred is [VS Code](https://code.visualstudio.com/download))_ open the directory.
    1. Through the command line you can navigate to the directory without needing to open up the individual files.
 
