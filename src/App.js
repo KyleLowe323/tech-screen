@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react';
 import { fetchOrganizationData } from './api';
 import Layout from './components/Layout'
 import Table from './components/Table'
+import {Button, ButtonGroup} from './components/Button'
 
 const App = () => {
   const [isFetching, setIsFetching] = useState(false);
@@ -30,12 +31,12 @@ const App = () => {
 
   return (
     <Layout {...{orgName}}>
-      <>
-        <button onClick={() => setOrgName('Netflix')} title={'click to see Netflix repos'} disabled={orgName === 'Netflix'}>Netflix</button>
-        <button onClick={() => setOrgName('Twitter')} title={'click to see Twitter repos'} disabled={orgName === 'Twitter'}>Twitter</button>
-        <button onClick={() => setOrgName('Microsoft')} title={'click to see Microsoft repos'} disabled={orgName === 'Microsoft'}>Microsoft</button>
-        <button onClick={() => setOrgName('Google')} title={'click to see Google repos'} disabled={orgName === 'Google'}>Google</button>
-      </>
+      <ButtonGroup>
+        <Button onClick={() => setOrgName('Netflix')} title={'click to see Netflix repos'} disabled={orgName === 'Netflix'}>Netflix</Button>
+        <Button onClick={() => setOrgName('Twitter')} title={'click to see Twitter repos'} disabled={orgName === 'Twitter'}>Twitter</Button>
+        <Button onClick={() => setOrgName('Microsoft')} title={'click to see Microsoft repos'} disabled={orgName === 'Microsoft'}>Microsoft</Button>
+        <Button onClick={() => setOrgName('Google')} title={'click to see Google repos'} disabled={orgName === 'Google'}>Google</Button>
+      </ButtonGroup>
       {!isFetching && <Table data={OrgRepoData} />}
       {isFetching && <h3>Fetching data</h3>}
     </Layout>

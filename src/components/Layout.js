@@ -19,6 +19,7 @@ const Header = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 1.75em;
+  border-bottom: 1px solid;
 `;
 const HeaderSubText = styled.p`
   margin: 0;
