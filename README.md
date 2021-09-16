@@ -33,15 +33,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Stretch Goals
 
-  - Format/style table to be more visually appealing.
+  - Format/style table to be more visually appealing
   - Allow for the retrieval of more than one org data
   - Allow user to select field to sort
 
-- Gold platting _(if more time were available)_
+- Gold plating _(if more time were available)_
   - Uplift state management using [Redux](https://redux.js.org/)
   - Additional query params for server request to achieve pagination
-  - Move the overall sorting of data to a selector using [Reselect](https://github.com/reduxjs/reselect) or even useMemo to ensure that the data is memoized.
-  - Proper loading/fetching indicator when fetching data.
+  - Move the overall sorting of data to a selector using [Reselect](https://github.com/reduxjs/reselect) or even useMemo to ensure that the data is memoized
+  - Proper loading/fetching indicator when fetching data
   - Proper tooltips in lieu of `title` attribute for areas where data is too large to fit into predefined cells
 
 ## Testing Instructions
